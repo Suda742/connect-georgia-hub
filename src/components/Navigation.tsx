@@ -33,7 +33,7 @@ const Navigation = () => {
             <div className="w-8 h-8 bg-gradient-cta rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">D</span>
             </div>
-            <span className="text-xl font-bold text-brand-primary georgian-text">
+            <span className="text-xl font-headline font-black text-brand-primary georgian-text">
               DCD.ge
             </span>
           </div>
@@ -42,19 +42,19 @@ const Navigation = () => {
           <div className="hidden md:flex items-center space-x-8">
             <button 
               onClick={() => scrollToSection('how-it-works')}
-              className="text-gray-600 hover:text-brand-primary transition-colors duration-300 georgian-text"
+              className="text-body-primary hover:text-brand-primary transition-colors duration-300 georgian-text font-medium"
             >
               როგორ მუშაობს
             </button>
             <button 
               onClick={() => scrollToSection('faq')}
-              className="text-gray-600 hover:text-brand-primary transition-colors duration-300 georgian-text"
+              className="text-body-primary hover:text-brand-primary transition-colors duration-300 georgian-text font-medium"
             >
               FAQ
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
-              className="text-gray-600 hover:text-brand-primary transition-colors duration-300 georgian-text"
+              className="text-body-primary hover:text-brand-primary transition-colors duration-300 georgian-text font-medium"
             >
               კონტაქტი
             </button>

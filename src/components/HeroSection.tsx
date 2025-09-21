@@ -14,24 +14,24 @@ const HeroSection = () => {
           {/* Left Content */}
           <div className="space-y-8 animate-fade-in-up">
             {/* Trust indicators */}
-            <div className="flex items-center space-x-4 text-sm text-gray-600">
+            <div className="flex items-center space-x-4 text-body-secondary">
               <div className="flex items-center space-x-1">
                 <Shield className="w-4 h-4 text-brand-success" />
-                <span className="georgian-text">უსაფრთხო</span>
+                <span className="georgian-text font-medium">უსაფრთხო</span>
               </div>
               <div className="flex items-center space-x-1">
                 <Users className="w-4 h-4 text-brand-success" />
-                <span className="georgian-text">სანდო</span>
+                <span className="georgian-text font-medium">სანდო</span>
               </div>
               <div className="flex items-center space-x-1">
                 <Zap className="w-4 h-4 text-brand-success" />
-                <span className="georgian-text">სწრაფი</span>
+                <span className="georgian-text font-medium">სწრაფი</span>
               </div>
             </div>
 
             {/* Main headline */}
-            <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight georgian-text">
+            <div className="space-y-6">
+              <h1 className="text-hero georgian-text">
                 იპოვე სანდო{" "}
                 <span className="bg-gradient-to-r from-brand-primary to-brand-accent bg-clip-text text-transparent">
                   დისპეტჩერი
@@ -39,7 +39,7 @@ const HeroSection = () => {
                 ან მძღოლი მარტივად
               </h1>
               
-              <p className="text-xl text-gray-600 leading-relaxed georgian-text max-w-lg">
+              <p className="text-subheading georgian-text max-w-lg">
                 DCD.ge გეხმარება სწრაფად და უსაფრთხოდ დაკავშირებაში. შეუერთდი ათასობით 
                 პროფესიონალს, რომლებიც ჩვენს პლატფორმას ენდობიან.
               </p>
@@ -55,7 +55,7 @@ const HeroSection = () => {
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Button>
               
-              <p className="text-sm text-gray-500 georgian-text">
+              <p className="text-body-secondary georgian-text">
                 ✓ რეგისტრაცია უფასოა  ✓ მაშინვე დაიწყე მუშაობა  ✓ 24/7 მხარდაჭერა
               </p>
             </div>
@@ -63,16 +63,16 @@ const HeroSection = () => {
             {/* Quick stats */}
             <div className="grid grid-cols-3 gap-4 pt-8 border-t border-gray-200">
               <div className="text-center">
-                <div className="text-2xl font-bold text-brand-primary">5000+</div>
-                <div className="text-sm text-gray-600 georgian-text">რეგისტრირებული</div>
+                <div className="text-3xl font-headline font-black text-brand-primary">5000+</div>
+                <div className="text-body-secondary georgian-text">რეგისტრირებული</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-brand-primary">24/7</div>
-                <div className="text-sm text-gray-600 georgian-text">მხარდაჭერა</div>
+                <div className="text-3xl font-headline font-black text-brand-primary">24/7</div>
+                <div className="text-body-secondary georgian-text">მხარდაჭერა</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-brand-primary">99%</div>
-                <div className="text-sm text-gray-600 georgian-text">კმაყოფილება</div>
+                <div className="text-3xl font-headline font-black text-brand-primary">99%</div>
+                <div className="text-body-secondary georgian-text">კმაყოფილება</div>
               </div>
             </div>
           </div>

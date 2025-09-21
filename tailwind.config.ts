@@ -86,6 +86,22 @@ export default {
         "lg": "var(--shadow-lg)",
         "hero": "var(--shadow-hero)",
       },
+      fontFamily: {
+        'headline': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        'body': ['Open Sans', 'system-ui', '-apple-system', 'sans-serif'],
+        'sans': ['Open Sans', 'system-ui', '-apple-system', 'sans-serif'],
+      },
+      fontSize: {
+        'hero-xl': ['4rem', { lineHeight: '1.1', letterSpacing: '-0.02em' }],      // 64px
+        'hero-lg': ['3.5rem', { lineHeight: '1.1', letterSpacing: '-0.02em' }],    // 56px  
+        'hero-md': ['3rem', { lineHeight: '1.2', letterSpacing: '-0.01em' }],      // 48px
+        'headline-xl': ['2.5rem', { lineHeight: '1.2', letterSpacing: '-0.01em' }], // 40px
+        'headline-lg': ['2rem', { lineHeight: '1.3', letterSpacing: '-0.01em' }],   // 32px
+        'headline-md': ['1.5rem', { lineHeight: '1.4', letterSpacing: '0' }],       // 24px
+        'body-lg': ['1.125rem', { lineHeight: '1.6', letterSpacing: '0' }],         // 18px
+        'body-md': ['1rem', { lineHeight: '1.6', letterSpacing: '0' }],             // 16px
+        'body-sm': ['0.875rem', { lineHeight: '1.5', letterSpacing: '0' }],         // 14px
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

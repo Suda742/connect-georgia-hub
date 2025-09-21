@@ -27,10 +27,10 @@ const HowItWorksSection = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 georgian-text">
+          <h2 className="text-headline-primary georgian-text mb-6">
             როგორ მუშაობს DCD.ge?
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto georgian-text">
+          <p className="text-subheading max-w-2xl mx-auto georgian-text">
             სამი მარტივი ნაბიჯი წარმატებული კარიერისათვის სატრანსპორტო სფეროში
           </p>
         </div>
@@ -56,10 +56,10 @@ const HowItWorksSection = () => {
                 </div>
 
                 {/* Content */}
-                <h3 className="text-xl font-semibold text-gray-900 mb-3 georgian-text">
+                <h3 className="text-headline-secondary georgian-text mb-4">
                   {step.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed georgian-text">
+                <p className="text-body-primary georgian-text">
                   {step.description}
                 </p>
 
@@ -75,7 +75,7 @@ const HowItWorksSection = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-16 animate-fade-in-up">
-          <p className="text-lg text-gray-600 mb-6 georgian-text">
+          <p className="text-subheading mb-8 georgian-text">
             მზად ხარ დასაწყებად?
           </p>
           <button className="btn-hero georgian-text">

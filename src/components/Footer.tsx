@@ -11,11 +11,11 @@ const Footer = () => {
               <div className="w-8 h-8 bg-gradient-cta rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">D</span>
               </div>
-              <span className="text-xl font-bold text-white georgian-text">
+              <span className="text-xl font-headline font-black text-white georgian-text">
                 DCD.ge
               </span>
             </div>
-            <p className="text-gray-300 leading-relaxed georgian-text">
+            <p className="text-body-primary text-gray-300 leading-relaxed georgian-text">
               საქართველოს წამყვანი პლატფორმა მძღოლებისა და დისპეტჩერების დასაკავშირებლად.
             </p>
             <div className="flex space-x-4">
@@ -33,7 +33,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold georgian-text">სწრაფი ლინკები</h3>
+            <h3 className="text-headline-md font-headline font-semibold georgian-text mb-4">სწრაფი ლინკები</h3>
             <ul className="space-y-2">
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors duration-300 georgian-text">მთავარი</a></li>
               <li><a href="#how-it-works" className="text-gray-300 hover:text-white transition-colors duration-300 georgian-text">როგორ მუშაობს</a></li>
@@ -44,7 +44,7 @@ const Footer = () => {
 
           {/* Services */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold georgian-text">სერვისები</h3>
+            <h3 className="text-headline-md font-headline font-semibold georgian-text mb-4">სერვისები</h3>
             <ul className="space-y-2">
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors duration-300 georgian-text">მძღოლებისათვის</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors duration-300 georgian-text">დისპეტჩერებისათვის</a></li>
@@ -55,7 +55,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold georgian-text">კონტაქტი</h3>
+            <h3 className="text-headline-md font-headline font-semibold georgian-text mb-4">კონტაქტი</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-brand-accent" />

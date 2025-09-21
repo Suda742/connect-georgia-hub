@@ -123,25 +123,51 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background text-foreground font-body antialiased;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   }
 
-  /* Professional Georgian Typography Support */
+  /* Professional Typography Classes */
+  .text-hero {
+    @apply font-headline font-black text-hero-xl md:text-hero-lg lg:text-hero-xl text-gray-900;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-headline-primary {
+    @apply font-headline font-bold text-headline-xl md:text-headline-lg lg:text-headline-xl text-gray-900;
+  }
+  
+  .text-headline-secondary {
+    @apply font-headline font-semibold text-headline-lg md:text-headline-md lg:text-headline-lg text-gray-900;
+  }
+  
+  .text-subheading {
+    @apply font-body font-medium text-body-lg md:text-body-md lg:text-body-lg text-gray-600;
+  }
+  
+  .text-body-primary {
+    @apply font-body font-normal text-body-md leading-relaxed text-gray-700;
+  }
+  
+  .text-body-secondary {
+    @apply font-body font-normal text-body-sm leading-relaxed text-gray-600;
+  }
+
+  /* Georgian Text Enhancement */
   .georgian-text {
-    font-family: "BPG Nino Mtavruli", "Sylfaen", "DejaVu Serif", "Lato", sans-serif;
+    font-family: "Inter", "BPG Nino Mtavruli", "Sylfaen", "DejaVu Serif", system-ui, sans-serif;
     font-feature-settings: "kern" 1, "liga" 1;
   }
 }
 
 @layer components {
-  /* CTA Button Variants */
+  /* Enhanced CTA Button Variants */
   .btn-hero {
-    @apply bg-gradient-to-r from-brand-primary to-brand-primary-dark text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-lg transition-all duration-300 hover:shadow-hero hover:scale-105 active:scale-95;
+    @apply bg-gradient-to-r from-brand-primary to-brand-primary-dark text-white px-8 py-4 rounded-xl font-headline font-bold text-lg shadow-lg transition-all duration-300 hover:shadow-hero hover:scale-105 active:scale-95;
   }
   
   .btn-secondary {
-    @apply bg-white text-brand-primary border-2 border-brand-primary px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-brand-primary hover:text-white;
+    @apply bg-white text-brand-primary border-2 border-brand-primary px-6 py-3 rounded-lg font-headline font-semibold transition-all duration-300 hover:bg-brand-primary hover:text-white;
   }
 
   /* Card Components */

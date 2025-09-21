@@ -38,10 +38,10 @@ const FAQSection = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 georgian-text">
+          <h2 className="text-headline-primary georgian-text mb-6">
             ხშირად დასმული კითხვები
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto georgian-text">
+          <p className="text-subheading max-w-2xl mx-auto georgian-text">
             ყველაფერი, რაც უნდა იცოდე DCD.ge-ს შესახებ
           </p>
         </div>
@@ -62,14 +62,14 @@ const FAQSection = () => {
                         {index + 1}
                       </span>
                     </div>
-                    <span className="text-lg font-semibold text-gray-900 georgian-text flex-1 pr-4">
+                    <span className="text-headline-md font-headline font-semibold text-gray-900 georgian-text flex-1 pr-4">
                       {faq.question}
                     </span>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="pt-2 pb-6">
                   <div className="ml-12 pr-4">
-                    <p className="text-gray-600 leading-relaxed georgian-text">
+                    <p className="text-body-primary georgian-text">
                       {faq.answer}
                     </p>
                   </div>
@@ -82,10 +82,10 @@ const FAQSection = () => {
         {/* Contact CTA */}
         <div className="text-center mt-16 animate-fade-in-up">
           <div className="bg-white rounded-2xl p-8 max-w-2xl mx-auto shadow-md">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4 georgian-text">
+            <h3 className="text-headline-secondary georgian-text mb-4">
               კვლავ გაქვს კითხვები?
             </h3>
-            <p className="text-gray-600 mb-6 georgian-text">
+            <p className="text-body-primary mb-8 georgian-text">
               ჩვენი მხარდაჭერის გუნდი 24/7 მზადაა დაგეხმაროს
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
