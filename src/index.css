@@ -2,41 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* DCD.ge Design System - Professional Blue & White Theme
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
+    /* Brand Colors - DCD Blue Palette */
+    --brand-primary: 213 100% 45%;        /* DCD Main Blue */
+    --brand-primary-dark: 213 100% 35%;   /* Darker blue for hover */
+    --brand-primary-light: 213 100% 95%;  /* Light blue background */
+    --brand-accent: 197 92% 50%;          /* Bright accent blue */
+    --brand-success: 142 71% 45%;         /* Success green */
+    
+    /* Professional Grays */
+    --gray-50: 210 20% 98%;
+    --gray-100: 210 20% 96%;
+    --gray-200: 210 16% 93%;
+    --gray-300: 210 14% 89%;
+    --gray-500: 210 9% 53%;
+    --gray-600: 210 10% 40%;
+    --gray-900: 210 12% 16%;
+
+    /* Base System Colors */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 210 12% 16%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 12% 16%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 12% 16%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 213 100% 45%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 210 12% 16%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 20% 98%;
+    --muted-foreground: 210 9% 53%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 197 92% 50%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 210 16% 93%;
+    --input: 210 16% 93%;
+    --ring: 213 100% 45%;
 
-    --radius: 0.5rem;
+    /* Trust & Professional Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--brand-primary)) 0%, hsl(var(--brand-accent)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--background)) 0%, hsl(var(--gray-50)) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(var(--brand-primary)) 0%, hsl(var(--brand-primary-dark)) 100%);
+    
+    /* Professional Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(var(--gray-900) / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(var(--gray-900) / 0.1), 0 2px 4px -1px hsl(var(--gray-900) / 0.06);
+    --shadow-lg: 0 10px 15px -3px hsl(var(--gray-900) / 0.1), 0 4px 6px -2px hsl(var(--gray-900) / 0.05);
+    --shadow-hero: 0 25px 50px -12px hsl(var(--brand-primary) / 0.25);
+    
+    /* Spacing & Typography */
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,41 +85,31 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --background: 210 12% 16%;
+    --foreground: 0 0% 100%;
+    --card: 210 10% 20%;
+    --card-foreground: 0 0% 100%;
+    --popover: 210 10% 20%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 213 100% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 10% 25%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 210 10% 25%;
+    --muted-foreground: 210 20% 65%;
+    --accent: 197 92% 60%;
+    --accent-foreground: 0 0% 100%;
+    --border: 210 10% 25%;
+    --input: 210 10% 25%;
+    --ring: 213 100% 55%;
+    --sidebar-background: 210 12% 16%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 213 100% 55%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 210 10% 25%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 210 10% 25%;
+    --sidebar-ring: 213 100% 55%;
   }
 }
 
@@ -99,7 +118,61 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Professional Georgian Typography Support */
+  .georgian-text {
+    font-family: "BPG Nino Mtavruli", "Sylfaen", "DejaVu Serif", "Lato", sans-serif;
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+}
+
+@layer components {
+  /* CTA Button Variants */
+  .btn-hero {
+    @apply bg-gradient-to-r from-brand-primary to-brand-primary-dark text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-lg transition-all duration-300 hover:shadow-hero hover:scale-105 active:scale-95;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-brand-primary border-2 border-brand-primary px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-brand-primary hover:text-white;
+  }
+
+  /* Card Components */
+  .card-professional {
+    @apply bg-white rounded-2xl shadow-md border border-gray-200 p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+  
+  .card-step {
+    @apply bg-gradient-to-br from-white to-gray-50 rounded-xl p-6 border border-gray-200 transition-all duration-300 hover:shadow-md;
+  }
+
+  /* Animation Classes */
+  .fade-in-up {
+    @apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
+  }
+  
+  .fade-in-up.in-view {
+    @apply opacity-100 translate-y-0;
+  }
+  
+  .pulse-glow {
+    @apply animate-pulse;
+    box-shadow: 0 0 20px hsl(var(--brand-primary) / 0.3);
+  }
+
+  /* Icon Animations */
+  .icon-float {
+    @apply transition-transform duration-300 hover:-translate-y-1;
+  }
+  
+  .icon-pulse {
+    @apply animate-pulse;
   }
 }
